@@ -1,1 +1,1 @@
-# -YagomStudy
+# YagomStudy
