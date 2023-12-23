@@ -6,13 +6,57 @@
 import SwiftUI
 
 struct CustomNavigationBar: View {
-  var body: some View {
-    Text("CustomNavigationBar")
-  }
+    let isDisplayLeftBtn: Bool
+    let isDisPlayRightBtn: Bool
+    let leftBtnAction: () -> Void
+    let rightBtnAction: () -> Void
+    let rightBtnType: NavigationBtnType
+    
+    init(isDisplayLeftBtn: Bool = true,
+         isDisPlayRightBtn: Bool = true ,
+         leftBtnAction: @escaping () -> Void = {},
+         rightBtnAction: @escaping () -> Void = {},
+         rightBtnType: NavigationBtnType = .edit
+    ) {
+        self.isDisplayLeftBtn = isDisplayLeftBtn
+        self.isDisPlayRightBtn = isDisPlayRightBtn
+        self.leftBtnAction = leftBtnAction
+        self.rightBtnAction = rightBtnAction
+        self.rightBtnType = rightBtnType
+    }
+    
+    var body: some View {
+        HStack {
+            if isDisplayLeftBtn {
+                Button {
+                    leftBtnAction()
+                } label: {
+                    Image("leftArrow")
+                }
+            }
+            
+            Spacer()
+            
+            if isDisPlayRightBtn {
+                Button {
+                    rightBtnAction()
+                } label: {
+                    if rightBtnType == .close {
+                        Image("close")
+                    } else {
+                        Text(rightBtnType.rawValue)
+                            .foregroundStyle(Color.customBlack)
+                    }
+                }
+            }
+        } //: HSTACK
+        .padding(.horizontal, 20)
+        .frame(height: 20)
+    }
 }
 
 struct CustomNavigationBar_Previews: PreviewProvider {
-  static var previews: some View {
-    CustomNavigationBar()
-  }
+    static var previews: some View {
+        CustomNavigationBar()
+    }
 }
