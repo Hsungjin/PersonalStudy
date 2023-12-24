@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct Memo {
+struct Memo: Hashable {
     var title: String
     var content: String
     var date: Date

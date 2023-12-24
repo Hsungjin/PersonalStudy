@@ -5,5 +5,20 @@
 
 import Foundation
 
-class HomeViewModel {
+class HomeViewModel: ObservableObject {
+    @Published var memosCount: Int
+    
+    init(
+        memosCount: Int = 0
+    ) {
+        self.memosCount = memosCount
+    }
 }
+
+extension HomeViewModel {
+  
+  func setMemosCount(_ count: Int) {
+    memosCount = count
+  }
+}
+

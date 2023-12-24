@@ -15,16 +15,18 @@ struct OnboardingView: View {
         // TODO: - 화면 전환 구현 필요
         NavigationStack(path: $pathModel.paths) {
 //            OnboardingContentView(onboardingViewModel: onboardingViewModel)
-//            TodoListView()
-            MemoListView()
+            VoiceRecorderView()
                 .environmentObject(todoListViewModel)
                 .navigationDestination(for: PathType.self, destination: { pathType in
                     switch pathType {
                     case .homeView:
                         HomeView()
                             .navigationBarBackButtonHidden()
-                    case .memoView:
-                        MemoView(memoViewModel: MemoViewModel)
+                    case let .memoView(isCreateMode, memo):
+                        MemoView(memoViewModel: isCreateMode
+                                 ? .init(memo: .init(title: "", content: "", date: .now))
+                                 : .init(memo: .init(title: "", content: "", date: .now)),
+                                 isCreateMode: isCreateMode)
                             .navigationBarBackButtonHidden()
                             .environmentObject(memoListViewModel)
                     case .todoView:
