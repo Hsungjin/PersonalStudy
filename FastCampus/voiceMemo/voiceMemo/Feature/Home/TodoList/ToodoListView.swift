@@ -11,38 +11,40 @@ struct TodoListView: View {
     @EnvironmentObject private var homeViewModel: HomeViewModel
     
     var body: some View {
-        ZStack {
-            // 투두 셀 리스트
-            VStack {
-                if !todoListViewModel.todos.isEmpty {
-                    CustomNavigationBar(
-                        isDisplayLeftBtn: false,
-                        rightBtnAction: {
-                            todoListViewModel.navigationRightBtnTapped()
-                        },
-                        rightBtnType: todoListViewModel.navigationBarRightBtnMode
-                    )
-                } else {
-                    Spacer()
-                        .frame(height: 30)
-                }
-                
-                TitleView()
-                    .padding(.top, 20)
-                
-                if todoListViewModel.todos.isEmpty {
-                    AnnouncementView()
-                } else {
-                    TodoListContentView()
-                        .padding(.top, 20)
-                }
-                
-            } //: VSTACK
+        // 투두 셀 리스트
+        VStack {
+            if !todoListViewModel.todos.isEmpty {
+                CustomNavigationBar(
+                    isDisplayLeftBtn: false,
+                    rightBtnAction: {
+                        todoListViewModel.navigationRightBtnTapped()
+                    },
+                    rightBtnType: todoListViewModel.navigationBarRightBtnMode
+                )
+            } else {
+                Spacer()
+                    .frame(height: 30)
+            }
             
-            WriteTodoBtnView()
-                .padding(.trailing, 20)
-                .padding(.bottom, 50)
-        } //: ZSTACK
+            TitleView()
+                .padding(.top, 20)
+            
+            if todoListViewModel.todos.isEmpty {
+                AnnouncementView()
+            } else {
+                TodoListContentView()
+                    .padding(.top, 20)
+            }
+            
+        } //: VSTACK
+//        .modifier(WriteBtnViewModifier(action: { pathModel.paths.append(.todoView) }))
+        .writeBtn {
+            pathModel.paths.append(.todoView)
+        }
+        //
+        //            WriteTodoBtnView()
+        //                .padding(.trailing, 20)
+        //                .padding(.bottom, 50)
         .alert(
             "To do list \(todoListViewModel.removeTodosCount)개 삭제하시겠습니까?",
             isPresented: $todoListViewModel.isDisplayRemoveTodoAlert
