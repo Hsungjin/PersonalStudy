@@ -6,24 +6,25 @@
 import SwiftUI
 
 struct SettingView: View {
-  var body: some View {
-      
-      VStack {
-          // 타이틀 뷰
-          TitleView()
-          
-          Spacer()
-              .frame(height: 35)
-          // 총 탭 카운트 뷰
-          TotalTabCountView()
-          Spacer()
-              .frame(height: 40)
-          // 총 탬 무브 뷰
-          
-          TotalTabMoveView()
-          Spacer()
-      }
-  }
+    @EnvironmentObject private var homeViewModel: HomeViewModel
+    var body: some View {
+        
+        VStack {
+            // 타이틀 뷰
+            TitleView()
+            
+            Spacer()
+                .frame(height: 35)
+            // 총 탭 카운트 뷰
+            TotalTabCountView()
+            Spacer()
+                .frame(height: 40)
+            // 총 탬 무브 뷰
+            
+            TotalTabMoveView()
+            Spacer()
+        }
+    }
 }
 
 // MARK: - 타이틀 뷰
@@ -43,15 +44,16 @@ private struct TitleView: View {
 
 // MARK: - 전체 탭 설정된 카운트 뷰
 private struct TotalTabCountView: View {
+    @EnvironmentObject private var homeViewModel: HomeViewModel
     fileprivate var body: some View {
         // 각각 탭 카운트 뷰 (todolist, 메모장, 음성메모)
         HStack {
             Spacer()
-            TabCountView(title: "To do", count: 0)
+            TabCountView(title: "To do", count: homeViewModel.todosCount)
             Spacer()
-            TabCountView(title: "메모", count: 0)
+            TabCountView(title: "메모", count: homeViewModel.memosCount)
             Spacer()
-            TabCountView(title: "음성메모", count: 0)
+            TabCountView(title: "음성메모", count: homeViewModel.voiceRecordersCount)
             Spacer()
         }
     }
@@ -82,19 +84,20 @@ private struct TabCountView: View {
 
 // MARK: - 전체 탭 이동 뷰
 private struct TotalTabMoveView: View {
+    @EnvironmentObject private var homeViewModel: HomeViewModel
     fileprivate var body: some View {
         VStack {
             Rectangle()
                 .fill(Color.customGray1)
                 .frame(height: 1)
             
-            TabMoveView(title: "To do List", tabAction: { })
+            TabMoveView(title: "To do List", tabAction: { homeViewModel.changeSelectedTab(.todoList) })
             
-            TabMoveView(title: "메모장", tabAction: { })
+            TabMoveView(title: "메모장", tabAction: { homeViewModel.changeSelectedTab(.memo) })
             
-            TabMoveView(title: "음성메모", tabAction: { })
+            TabMoveView(title: "음성메모", tabAction: { homeViewModel.changeSelectedTab(.voiceRecorder) })
             
-            TabMoveView(title: "타이머", tabAction: { })
+            TabMoveView(title: "타이머", tabAction: { homeViewModel.changeSelectedTab(.timer) })
             
             
             Rectangle()
@@ -133,7 +136,8 @@ private struct TabMoveView: View {
 }
 
 struct SettingView_Previews: PreviewProvider {
-  static var previews: some View {
-    SettingView()
-  }
+    static var previews: some View {
+        SettingView()
+            .environmentObject(HomeViewModel())
+    }
 }

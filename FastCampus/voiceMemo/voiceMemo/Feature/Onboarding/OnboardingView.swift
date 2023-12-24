@@ -14,14 +14,14 @@ struct OnboardingView: View {
     var body: some View {
         // TODO: - 화면 전환 구현 필요
         NavigationStack(path: $pathModel.paths) {
-//            OnboardingContentView(onboardingViewModel: onboardingViewModel)
-            SettingView()
-                .environmentObject(todoListViewModel)
+            OnboardingContentView(onboardingViewModel: onboardingViewModel)
                 .navigationDestination(for: PathType.self, destination: { pathType in
                     switch pathType {
                     case .homeView:
                         HomeView()
                             .navigationBarBackButtonHidden()
+                            .environmentObject(todoListViewModel)
+                            .environmentObject(memoListViewModel)
                     case let .memoView(isCreateMode, memo):
                         MemoView(memoViewModel: isCreateMode
                                  ? .init(memo: .init(title: "", content: "", date: .now))
