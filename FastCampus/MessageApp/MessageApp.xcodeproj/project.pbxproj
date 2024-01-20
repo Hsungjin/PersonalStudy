@@ -34,6 +34,8 @@
 		647B2D262B5A9D9D0047EC77 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B2D252B5A9D9D0047EC77 /* AuthenticationService.swift */; };
 		64E26EAE2B5B882500FF642D /* LoginIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EAD2B5B882500FF642D /* LoginIntroView.swift */; };
 		64E26EB02B5B883000FF642D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EAF2B5B883000FF642D /* MainTabView.swift */; };
+		64E26EB22B5B8E2900FF642D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EB12B5B8E2900FF642D /* LoginView.swift */; };
+		64E26EB42B5B8EEA00FF642D /* LoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EB32B5B8EEA00FF642D /* LoginButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		647B2D252B5A9D9D0047EC77 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		64E26EAD2B5B882500FF642D /* LoginIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroView.swift; sourceTree = "<group>"; };
 		64E26EAF2B5B883000FF642D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		64E26EB12B5B8E2900FF642D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		64E26EB32B5B8EEA00FF642D /* LoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				64E26EAD2B5B882500FF642D /* LoginIntroView.swift */,
+				64E26EB12B5B8E2900FF642D /* LoginView.swift */,
+				64E26EB32B5B8EEA00FF642D /* LoginButtonStyle.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -390,7 +396,9 @@
 				647B2CFC2B5A72970047EC77 /* Color+Extension.swift in Sources */,
 				647B2CCD2B5A6FAF0047EC77 /* MessageAppApp.swift in Sources */,
 				647B2D262B5A9D9D0047EC77 /* AuthenticationService.swift in Sources */,
+				64E26EB22B5B8E2900FF642D /* LoginView.swift in Sources */,
 				64E26EAE2B5B882500FF642D /* LoginIntroView.swift in Sources */,
+				64E26EB42B5B8EEA00FF642D /* LoginButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
