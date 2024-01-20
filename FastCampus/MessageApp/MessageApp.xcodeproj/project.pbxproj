@@ -36,6 +36,10 @@
 		64E26EB02B5B883000FF642D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EAF2B5B883000FF642D /* MainTabView.swift */; };
 		64E26EB22B5B8E2900FF642D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EB12B5B8E2900FF642D /* LoginView.swift */; };
 		64E26EB42B5B8EEA00FF642D /* LoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EB32B5B8EEA00FF642D /* LoginButtonStyle.swift */; };
+		64E26EB72B5B944700FF642D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 64E26EB62B5B944700FF642D /* GoogleSignIn */; };
+		64E26EB92B5B944700FF642D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64E26EB82B5B944700FF642D /* GoogleSignInSwift */; };
+		64E26EBC2B5B957700FF642D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EBB2B5B957700FF642D /* User.swift */; };
+		64E26EBE2B5B95BF00FF642D /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26EBD2B5B95BF00FF642D /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,8 @@
 		64E26EAF2B5B883000FF642D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		64E26EB12B5B8E2900FF642D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		64E26EB32B5B8EEA00FF642D /* LoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonStyle.swift; sourceTree = "<group>"; };
+		64E26EBB2B5B957700FF642D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		64E26EBD2B5B95BF00FF642D /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 				647B2D102B5A9C4B0047EC77 /* FirebaseDatabase in Frameworks */,
 				647B2D182B5A9C4B0047EC77 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				647B2D1E2B5A9C4B0047EC77 /* FirebaseStorage in Frameworks */,
+				64E26EB92B5B944700FF642D /* GoogleSignInSwift in Frameworks */,
+				64E26EB72B5B944700FF642D /* GoogleSignIn in Frameworks */,
 				647B2D1A2B5A9C4B0047EC77 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				647B2D122B5A9C4B0047EC77 /* FirebaseFirestore in Frameworks */,
 				647B2D0C2B5A9C4B0047EC77 /* FirebaseAuth in Frameworks */,
@@ -142,6 +150,7 @@
 				647B2CFD2B5A73DB0047EC77 /* Info.plist */,
 				647B2D232B5A9D2E0047EC77 /* GoogleService-Info.plist */,
 				647B2CCC2B5A6FAF0047EC77 /* MessageAppApp.swift */,
+				64E26EBA2B5B956900FF642D /* Model */,
 				647B2D062B5A7E460047EC77 /* View */,
 				647B2D032B5A753A0047EC77 /* Service */,
 				647B2D002B5A75020047EC77 /* General */,
@@ -199,6 +208,7 @@
 			children = (
 				647B2D042B5A754D0047EC77 /* Services.swift */,
 				647B2D252B5A9D9D0047EC77 /* AuthenticationService.swift */,
+				64E26EBD2B5B95BF00FF642D /* ServiceError.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -240,6 +250,14 @@
 			path = MainTabView;
 			sourceTree = "<group>";
 		};
+		64E26EBA2B5B956900FF642D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64E26EBB2B5B957700FF642D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +286,8 @@
 				647B2D1B2B5A9C4B0047EC77 /* FirebaseMessaging */,
 				647B2D1D2B5A9C4B0047EC77 /* FirebaseStorage */,
 				647B2D1F2B5A9C4B0047EC77 /* FirebaseStorageCombine-Community */,
+				64E26EB62B5B944700FF642D /* GoogleSignIn */,
+				64E26EB82B5B944700FF642D /* GoogleSignInSwift */,
 			);
 			productName = MessageApp;
 			productReference = 647B2CC92B5A6FAF0047EC77 /* MessageApp.app */;
@@ -343,6 +363,7 @@
 			mainGroup = 647B2CC02B5A6FAF0047EC77;
 			packageReferences = (
 				647B2D0A2B5A9C4B0047EC77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				64E26EB52B5B944700FF642D /* XCRemoteSwiftPackageReference "GoogleSignin-iOS" */,
 			);
 			productRefGroup = 647B2CCA2B5A6FAF0047EC77 /* Products */;
 			projectDirPath = "";
@@ -396,6 +417,8 @@
 				647B2CFC2B5A72970047EC77 /* Color+Extension.swift in Sources */,
 				647B2CCD2B5A6FAF0047EC77 /* MessageAppApp.swift in Sources */,
 				647B2D262B5A9D9D0047EC77 /* AuthenticationService.swift in Sources */,
+				64E26EBE2B5B95BF00FF642D /* ServiceError.swift in Sources */,
+				64E26EBC2B5B957700FF642D /* User.swift in Sources */,
 				64E26EB22B5B8E2900FF642D /* LoginView.swift in Sources */,
 				64E26EAE2B5B882500FF642D /* LoginIntroView.swift in Sources */,
 				64E26EB42B5B8EEA00FF642D /* LoginButtonStyle.swift in Sources */,
@@ -740,6 +763,14 @@
 				minimumVersion = 10.20.0;
 			};
 		};
+		64E26EB52B5B944700FF642D /* XCRemoteSwiftPackageReference "GoogleSignin-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignin-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -797,6 +828,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 647B2D0A2B5A9C4B0047EC77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		64E26EB62B5B944700FF642D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E26EB52B5B944700FF642D /* XCRemoteSwiftPackageReference "GoogleSignin-iOS" */;
+			productName = GoogleSignIn;
+		};
+		64E26EB82B5B944700FF642D /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E26EB52B5B944700FF642D /* XCRemoteSwiftPackageReference "GoogleSignin-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
