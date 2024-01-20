@@ -9,20 +9,21 @@ import SwiftUI
 
 struct AuthenticationView: View {
     // MARK: - PROPERTY
-    @StateObject var authViewModel = AuthenticationViewModel()
+    @StateObject var authViewModel: AuthenticationViewModel
     
     // MARK: - BODY
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch authViewModel.authenticationState {
+        case .unauthenticated:
+            // TODO: 로그인 뷰
+            LoginIntroView()
+        case .authenticated:
+            // TODO: 메인탭 뷰
+            MainTabView()
         }
-        .padding()
     }
 }
 
 #Preview {
-    AuthenticationView(authViewModel: .init())
+    AuthenticationView(authViewModel: .init(container: .init(services: StubService())))
 }
