@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64BD36502B9E034000D296DB /* VoiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD364F2B9E034000D296DB /* VoiceMemoApp.swift */; };
+		64BD36542B9E034200D296DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BD36532B9E034200D296DB /* Assets.xcassets */; };
+		64BD36572B9E034200D296DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BD36562B9E034200D296DB /* Preview Assets.xcassets */; };
+		64BD36612B9E034200D296DB /* VoiceMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36602B9E034200D296DB /* VoiceMemoTests.swift */; };
+		64BD366B2B9E034200D296DB /* VoiceMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD366A2B9E034200D296DB /* VoiceMemoUITests.swift */; };
+		64BD366D2B9E034200D296DB /* VoiceMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD366C2B9E034200D296DB /* VoiceMemoUITestsLaunchTests.swift */; };
+		64BD36882B9E055000D296DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36872B9E054F00D296DB /* AppDelegate.swift */; };
+		64BD368A2B9E056800D296DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BD36892B9E056800D296DB /* LaunchScreen.storyboard */; };
+		64BD36932B9E06DB00D296DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36922B9E06DB00D296DB /* HomeView.swift */; };
+		64BD36952B9E06E700D296DB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36942B9E06E700D296DB /* HomeViewModel.swift */; };
+		64BD369F2B9E080C00D296DB /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD369E2B9E080C00D296DB /* Date+Extensions.swift */; };
+		64BD36A12B9E081300D296DB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36A02B9E081300D296DB /* Double+Extensions.swift */; };
+		64BD36A32B9E081800D296DB /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36A22B9E081800D296DB /* Int+Extensions.swift */; };
+		64BD36A52B9E081E00D296DB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36A42B9E081E00D296DB /* Color+Extensions.swift */; };
+		64BD36A72B9E09D300D296DB /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36A62B9E09D300D296DB /* OnboardingContent.swift */; };
+		64BD36A92B9E0A5600D296DB /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36A82B9E0A5600D296DB /* OnboardingViewModel.swift */; };
+		64BD36AB2B9E0A5E00D296DB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD36AA2B9E0A5E00D296DB /* OnboardingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64BD365D2B9E034200D296DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BD36442B9E034000D296DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64BD364B2B9E034000D296DB;
+			remoteInfo = VoiceMemo;
+		};
+		64BD36672B9E034200D296DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BD36442B9E034000D296DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64BD364B2B9E034000D296DB;
+			remoteInfo = VoiceMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64BD364C2B9E034000D296DB /* VoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BD364F2B9E034000D296DB /* VoiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoApp.swift; sourceTree = "<group>"; };
+		64BD36532B9E034200D296DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64BD36562B9E034200D296DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64BD365C2B9E034200D296DB /* VoiceMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BD36602B9E034200D296DB /* VoiceMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoTests.swift; sourceTree = "<group>"; };
+		64BD36662B9E034200D296DB /* VoiceMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BD366A2B9E034200D296DB /* VoiceMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoUITests.swift; sourceTree = "<group>"; };
+		64BD366C2B9E034200D296DB /* VoiceMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64BD36872B9E054F00D296DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64BD36892B9E056800D296DB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64BD368B2B9E05ED00D296DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		64BD36922B9E06DB00D296DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		64BD36942B9E06E700D296DB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		64BD369E2B9E080C00D296DB /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		64BD36A02B9E081300D296DB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		64BD36A22B9E081800D296DB /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		64BD36A42B9E081E00D296DB /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		64BD36A62B9E09D300D296DB /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		64BD36A82B9E0A5600D296DB /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		64BD36AA2B9E0A5E00D296DB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64BD36492B9E034000D296DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD36592B9E034200D296DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD36632B9E034200D296DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64BD36432B9E034000D296DB = {
+			isa = PBXGroup;
+			children = (
+				64BD364E2B9E034000D296DB /* VoiceMemo */,
+				64BD365F2B9E034200D296DB /* VoiceMemoTests */,
+				64BD36692B9E034200D296DB /* VoiceMemoUITests */,
+				64BD364D2B9E034000D296DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64BD364D2B9E034000D296DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BD364C2B9E034000D296DB /* VoiceMemo.app */,
+				64BD365C2B9E034200D296DB /* VoiceMemoTests.xctest */,
+				64BD36662B9E034200D296DB /* VoiceMemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BD364E2B9E034000D296DB /* VoiceMemo */ = {
+			isa = PBXGroup;
+			children = (
+				64BD368B2B9E05ED00D296DB /* Info.plist */,
+				64BD36862B9E03F500D296DB /* App */,
+				64BD36852B9E03F300D296DB /* Core */,
+				64BD36842B9E03F200D296DB /* Component */,
+				64BD36832B9E03EE00D296DB /* Feature */,
+				64BD36822B9E03EA00D296DB /* Model */,
+				64BD36532B9E034200D296DB /* Assets.xcassets */,
+				64BD36552B9E034200D296DB /* Preview Content */,
+			);
+			path = VoiceMemo;
+			sourceTree = "<group>";
+		};
+		64BD36552B9E034200D296DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64BD36562B9E034200D296DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64BD365F2B9E034200D296DB /* VoiceMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				64BD36602B9E034200D296DB /* VoiceMemoTests.swift */,
+			);
+			path = VoiceMemoTests;
+			sourceTree = "<group>";
+		};
+		64BD36692B9E034200D296DB /* VoiceMemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64BD366A2B9E034200D296DB /* VoiceMemoUITests.swift */,
+				64BD366C2B9E034200D296DB /* VoiceMemoUITestsLaunchTests.swift */,
+			);
+			path = VoiceMemoUITests;
+			sourceTree = "<group>";
+		};
+		64BD36822B9E03EA00D296DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64BD369B2B9E071700D296DB /* Path */,
+				64BD369A2B9E070C00D296DB /* Onboarding */,
+				64BD36992B9E070900D296DB /* Home */,
+				64BD36982B9E070500D296DB /* Todo */,
+				64BD36972B9E070100D296DB /* Memo */,
+				64BD36962B9E06FD00D296DB /* Timer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64BD36832B9E03EE00D296DB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				64BD368C2B9E069800D296DB /* Onboarding */,
+				64BD368D2B9E06A000D296DB /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		64BD36842B9E03F200D296DB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		64BD36852B9E03F300D296DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				64BD369D2B9E07EF00D296DB /* Service */,
+				64BD369C2B9E07E800D296DB /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64BD36862B9E03F500D296DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64BD364F2B9E034000D296DB /* VoiceMemoApp.swift */,
+				64BD36872B9E054F00D296DB /* AppDelegate.swift */,
+				64BD36892B9E056800D296DB /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		64BD368C2B9E069800D296DB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				64BD36A82B9E0A5600D296DB /* OnboardingViewModel.swift */,
+				64BD36AA2B9E0A5E00D296DB /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		64BD368D2B9E06A000D296DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64BD36922B9E06DB00D296DB /* HomeView.swift */,
+				64BD36942B9E06E700D296DB /* HomeViewModel.swift */,
+				64BD36912B9E06CF00D296DB /* TodoList */,
+				64BD36902B9E06C600D296DB /* VoiceRecorder */,
+				64BD368E2B9E06BA00D296DB /* Timer */,
+				64BD368F2B9E06BE00D296DB /* Setting */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		64BD368E2B9E06BA00D296DB /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		64BD368F2B9E06BE00D296DB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		64BD36902B9E06C600D296DB /* VoiceRecorder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VoiceRecorder;
+			sourceTree = "<group>";
+		};
+		64BD36912B9E06CF00D296DB /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		64BD36962B9E06FD00D296DB /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		64BD36972B9E070100D296DB /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		64BD36982B9E070500D296DB /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		64BD36992B9E070900D296DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		64BD369A2B9E070C00D296DB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				64BD36A62B9E09D300D296DB /* OnboardingContent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		64BD369B2B9E071700D296DB /* Path */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		64BD369C2B9E07E800D296DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64BD369E2B9E080C00D296DB /* Date+Extensions.swift */,
+				64BD36A02B9E081300D296DB /* Double+Extensions.swift */,
+				64BD36A22B9E081800D296DB /* Int+Extensions.swift */,
+				64BD36A42B9E081E00D296DB /* Color+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		64BD369D2B9E07EF00D296DB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64BD364B2B9E034000D296DB /* VoiceMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BD36702B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemo" */;
+			buildPhases = (
+				64BD36482B9E034000D296DB /* Sources */,
+				64BD36492B9E034000D296DB /* Frameworks */,
+				64BD364A2B9E034000D296DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceMemo;
+			productName = VoiceMemo;
+			productReference = 64BD364C2B9E034000D296DB /* VoiceMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64BD365B2B9E034200D296DB /* VoiceMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BD36732B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemoTests" */;
+			buildPhases = (
+				64BD36582B9E034200D296DB /* Sources */,
+				64BD36592B9E034200D296DB /* Frameworks */,
+				64BD365A2B9E034200D296DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64BD365E2B9E034200D296DB /* PBXTargetDependency */,
+			);
+			name = VoiceMemoTests;
+			productName = VoiceMemoTests;
+			productReference = 64BD365C2B9E034200D296DB /* VoiceMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64BD36652B9E034200D296DB /* VoiceMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BD36762B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemoUITests" */;
+			buildPhases = (
+				64BD36622B9E034200D296DB /* Sources */,
+				64BD36632B9E034200D296DB /* Frameworks */,
+				64BD36642B9E034200D296DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64BD36682B9E034200D296DB /* PBXTargetDependency */,
+			);
+			name = VoiceMemoUITests;
+			productName = VoiceMemoUITests;
+			productReference = 64BD36662B9E034200D296DB /* VoiceMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64BD36442B9E034000D296DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					64BD364B2B9E034000D296DB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					64BD365B2B9E034200D296DB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 64BD364B2B9E034000D296DB;
+					};
+					64BD36652B9E034200D296DB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 64BD364B2B9E034000D296DB;
+					};
+				};
+			};
+			buildConfigurationList = 64BD36472B9E034000D296DB /* Build configuration list for PBXProject "VoiceMemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64BD36432B9E034000D296DB;
+			productRefGroup = 64BD364D2B9E034000D296DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64BD364B2B9E034000D296DB /* VoiceMemo */,
+				64BD365B2B9E034200D296DB /* VoiceMemoTests */,
+				64BD36652B9E034200D296DB /* VoiceMemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64BD364A2B9E034000D296DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BD368A2B9E056800D296DB /* LaunchScreen.storyboard in Resources */,
+				64BD36572B9E034200D296DB /* Preview Assets.xcassets in Resources */,
+				64BD36542B9E034200D296DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD365A2B9E034200D296DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD36642B9E034200D296DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64BD36482B9E034000D296DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BD36A12B9E081300D296DB /* Double+Extensions.swift in Sources */,
+				64BD36A72B9E09D300D296DB /* OnboardingContent.swift in Sources */,
+				64BD36882B9E055000D296DB /* AppDelegate.swift in Sources */,
+				64BD36932B9E06DB00D296DB /* HomeView.swift in Sources */,
+				64BD36A52B9E081E00D296DB /* Color+Extensions.swift in Sources */,
+				64BD36A92B9E0A5600D296DB /* OnboardingViewModel.swift in Sources */,
+				64BD36952B9E06E700D296DB /* HomeViewModel.swift in Sources */,
+				64BD36A32B9E081800D296DB /* Int+Extensions.swift in Sources */,
+				64BD369F2B9E080C00D296DB /* Date+Extensions.swift in Sources */,
+				64BD36502B9E034000D296DB /* VoiceMemoApp.swift in Sources */,
+				64BD36AB2B9E0A5E00D296DB /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD36582B9E034200D296DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BD36612B9E034200D296DB /* VoiceMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64BD36622B9E034200D296DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BD366B2B9E034200D296DB /* VoiceMemoUITests.swift in Sources */,
+				64BD366D2B9E034200D296DB /* VoiceMemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64BD365E2B9E034200D296DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64BD364B2B9E034000D296DB /* VoiceMemo */;
+			targetProxy = 64BD365D2B9E034200D296DB /* PBXContainerItemProxy */;
+		};
+		64BD36682B9E034200D296DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64BD364B2B9E034000D296DB /* VoiceMemo */;
+			targetProxy = 64BD36672B9E034200D296DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64BD366E2B9E034200D296DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64BD366F2B9E034200D296DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64BD36712B9E034200D296DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceMemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64BD36722B9E034200D296DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceMemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64BD36742B9E034200D296DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceMemo";
+			};
+			name = Debug;
+		};
+		64BD36752B9E034200D296DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceMemo";
+			};
+			name = Release;
+		};
+		64BD36772B9E034200D296DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceMemo;
+			};
+			name = Debug;
+		};
+		64BD36782B9E034200D296DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKR332Q2BZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronnie.VoiceMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceMemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64BD36472B9E034000D296DB /* Build configuration list for PBXProject "VoiceMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BD366E2B9E034200D296DB /* Debug */,
+				64BD366F2B9E034200D296DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BD36702B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BD36712B9E034200D296DB /* Debug */,
+				64BD36722B9E034200D296DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BD36732B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BD36742B9E034200D296DB /* Debug */,
+				64BD36752B9E034200D296DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BD36762B9E034200D296DB /* Build configuration list for PBXNativeTarget "VoiceMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BD36772B9E034200D296DB /* Debug */,
+				64BD36782B9E034200D296DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64BD36442B9E034000D296DB /* Project object */;
+}
